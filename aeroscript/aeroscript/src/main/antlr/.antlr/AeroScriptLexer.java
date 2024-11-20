@@ -1,4 +1,4 @@
-// Generated from c:/Users/noaha/OneDrive/Dokumenter/IN2031/oblig3/IN2031_Oblig3/aeroscript/aeroscript/src/main/antlr/AeroScript.g4 by ANTLR 4.13.1
+// Generated from c:/Users/noaha/OneDrive/Dokumenter/IN2031/oblig3/aeroscript/aeroscript/src/main/antlr/AeroScript.g4 by ANTLR 4.13.1
 
 package no.uio.aeroscript.antlr;
 
