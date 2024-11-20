@@ -64,10 +64,11 @@ reaction    : ON event ARROW func=ID;
 event       : OBSTACLE | BATTERY | MESSAGE LSQUARE msg=ID RSQUARE ;
 action      : (acAscend | acMove | acTurn | acDock | acDescend) (FOR expression 's' | AT SPEED expression)?;
 acAscend    : ASCEND BY expression; // Must be a number or a random
-acMove      : MOVE (TO | BY) expression; // This must be a point for to and number for by
+acMove      : MOVE (TO POINT point | BY expression); // This must be a point for to and number for by
 acTurn      : TURN (RIGHT | LEFT)? BY expression; // This must be a number
 acDock      : RETURN TO BASE;
-acDescend   : DESCEND TO GROUND;
+acDescend   : DESCEND (by=BY expression | TO GROUND);
+
 
 expression : NEG expression |
              expression TIMES expression |
