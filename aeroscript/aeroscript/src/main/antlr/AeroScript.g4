@@ -67,7 +67,7 @@ acAscend    : ASCEND BY expression; // Must be a number or a random
 acMove      : MOVE (TO | BY) expression; // This must be a point for to and number for by
 acTurn      : TURN (RIGHT | LEFT)? BY expression; // This must be a number
 acDock      : RETURN TO BASE;
-acDescend   : DESCEND TO GROUND;
+acDescend   : DESCEND BY expression | DESCEND TO GROUND;
 
 expression : NEG expression |
              expression TIMES expression |
